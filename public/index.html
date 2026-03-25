@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phantom Chat | Ultra-Secure</title>
+    <link rel="manifest" href="/manifest.json">
+    <style>
+        body { background: #050505; color: #00FF88; font-family: 'Courier New', Courier, monospace; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; margin: 0; text-align: center; }
+        .logo { font-size: 3rem; font-weight: bold; text-shadow: 0 0 10px #00FF88; }
+        .status { margin-top: 20px; font-size: 1rem; color: #adaaaa; }
+        .contact { position: absolute; bottom: 20px; font-size: 0.8rem; color: #494847; }
+        .btn { border: 2px solid #00FF88; padding: 15px 30px; margin-top: 30px; cursor: pointer; background: transparent; color: #00FF88; font-weight: bold; transition: 0.3s; }
+        .btn:hover { background: #00FF88; color: #050505; }
+    </style>
+</head>
+<body>
+    <div class="logo">PHANTOM</div>
+    <div class="status">Quantum Identity: PENDING...</div>
+    <div class="status">Tor Connection: INITIALIZING...</div>
+    
+    <button class="btn" onclick="alert('Deploying Phantom Protocol...')">GENERATE SECURE IDENTITY</button>
+
+    <div class="contact">
+        DEV: @KINGS_TABLE (Telegram/Github)
+    </div>
+
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/sw.js');
+        }
+    </script>
+</body>
+</html>
